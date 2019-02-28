@@ -6,7 +6,7 @@
 // };
 // myFunction();
 
-let myFunction = _ => console.log("Function was invoked!");
+let myFunction = () => console.log("Function was invoked!");
 
 myFunction();
 

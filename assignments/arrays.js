@@ -68,7 +68,7 @@ let inventory = [{"id":1,"car_make":"Lincoln","car_model":"Navigator","car_year"
 // console.log(`Car 33 is a *car year goes here* *car make goes here* *car model goes here*` );
 
  function findCarbyID (arr, id) {
-    const result =[];
+    
     for (let i = 0; i < arr.length; i++) {
         if(arr[i].id === id) {
             return (`Car ${arr[i].id} is a ${arr[i].car_year} ${arr[i].car_make} ${arr[i].car_model}`);
@@ -77,6 +77,8 @@ let inventory = [{"id":1,"car_make":"Lincoln","car_model":"Navigator","car_year"
  }
 
 console.log(findCarbyID(inventory, 33));
+
+
 
 
 // ==== Challenge 2 ====
@@ -102,6 +104,7 @@ function allCarModels (arr) {
 console.log(allCarModels(inventory));
 
 
+
 // ==== Challenge 4 ====
 // The accounting team needs all the years from every car on the lot. Create a new array from the dealer data containing only the car years and log the result in the console.
 
@@ -116,7 +119,7 @@ function allCarYears (arr) {
     return carYears;
 }
 
-console.log(allCarYears(inventory));
+//console.log(allCarYears(inventory));
 
 
 // ==== Challenge 5 ====
@@ -133,7 +136,7 @@ function oldestCars (arr) {
     return oldCars.length;
 }
 
-console.log(oldestCars(carYears));
+//console.log(oldestCars(carYears));
 
 
 // ==== Challenge 6 ====
@@ -150,6 +153,6 @@ function bmwAndAudiArr (arr) {
     return (JSON.stringify(BMWAndAudi));
 }
 
-console.log(bmwAndAudiArr(inventory));
+//console.log(bmwAndAudiArr(inventory));
 
 
